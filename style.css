@@ -1,0 +1,83 @@
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+h1.title {
+    color: #e82d2d;
+    font-family: 'Vollkorn', serif;
+    font-size: 120px;
+    margin: 0 25px 0 0;
+}
+
+div.content p.para {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+div.content p.p1 {
+    margin: 15px 0 10px 0;
+    font-size: 24px;
+}
+
+div.content p.p2 {
+    font-size: 18px;
+}
+
+/* For Big Mobile or Small Tablet Screens */
+@media screen and (min-width: 450px) and (max-width: 650px) {
+    
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1.title {
+        margin: 0 0 -10px 0;
+    }
+
+    div.content p.p1 {
+        margin: 0 0 10px 0;
+    }
+
+}
+
+/* For Mobile Screens */
+@media screen and (min-width: 320px) and (max-width: 449px) {
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1.title {
+        margin: 0 0 -10px 0;
+    }
+
+    div.content p.p1 {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+    }
+    
+    div.content p.p2 {
+        font-size: 14px;
+    }
+
+}
+
